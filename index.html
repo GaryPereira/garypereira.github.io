@@ -1,167 +1,414 @@
-<html style="overflow-x: hidden;">
-
+<!DOCTYPE html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js">
-    </script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="Circlenav.js"></script>
-  <link rel="stylesheet" type="text/css" href="BarStyle.css" />
-  <link rel="stylesheet" type="text/css" href="GlitchEffect.css" />
-  <link rel="stylesheet" type="text/css" href="BG.css" />
-  <link rel="stylesheet" type="text/css" href="Header.css" />
-  <link rel="stylesheet" type="text/css" href="Main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieDex</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body class="BG">
-  <div class="animatedbg"></div>
-
-  <script>
-    $(window).on("load", function () {
-      $(".wrapperLB").fadeOut("slow");
-    });
-  </script>
-
-<div id="dec">
-  <div class="row">
-    <div class="col-sm-9"></div>
-    <div class="col-sm-3">
-    <ul>
-      <li>
-        <a href="#">Projects.</a>
-      </li>
-      <li>
-        <a href="#">About.</a>
-      </li>
-      <li>
-        <a href="#">Contact.</a>
-      </li>
-    </ul>
-    </div>
-  </div>
-</div>
-
-<div id="Title">
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-6">
-      <h1>Hello.</h1>
-    </div>
-    <div class="col-sm-5"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-5">
-      <h1>I'm Gary,</h1>
-    </div>
-    <div class="col-sm-5"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-4">
-      <h1>A web developer.</h1>
-    </div>
-    <div class="col-sm-5"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-4">
-      <h2>.web developer / 3d modeler / game designer.</h2>
-    </div>
-    <div class="col-sm-5"></div>
-  </div>
-</div>
-
-<div  id="Hide">
-  <div class="main">
-    <div class="navigation-circle">
-      <div class="navigation-circle__inner">
-        <svg class="navigation-circle-svg navigation-circle-svg--opaque" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="0 0 320 320" style="enable-background:new 0 0 320 320;">
-          <circle cx="160" cy="160" r="158" fill="none" stroke-width="1" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" style="stroke-dashoffset:0;stroke-dasharray:none;"></circle>
-        </svg>
-        <svg class="navigation-circle-svg navigation-circle-svg--mask" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="0 0 320 320" style="enable-background:new 0 0 320 320;">
-          <circle id="mask-circle" cx="160" cy="160" r="158" fill="none" stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" style="stroke-dasharray:1005.3088px;"></circle>
-        </svg>
-        <ul class="navigation-circle__list">
-          <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onclick="onClick(1)" onmouseenter="calculateOffset(1)" onMouseLeave="onMouseLeave()">
-              <div class="navigation-circle-list-item__meta">
-                <h3 class="navigation-circle-list-item__title">Projects
-                </h3>
-              </div></a></li>
-          <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onclick="onClick(2)" onmouseenter="calculateOffset(2)" onMouseLeave="onMouseLeave()">
-              <div class="navigation-circle-list-item__meta">
-                <h3 class="navigation-circle-list-item__title">About
-                </h3>
-              </div></a></li>
-          <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onclick="onClick(3)" onmouseenter="calculateOffset(3)" onMouseLeave="onMouseLeave()">
-              <div class="navigation-circle-list-item__meta">
-                <h3 class="navigation-circle-list-item__title">Contact
-                </h3>
-              </div></a></li>
-
-          <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onclick="onClick(7)" onmouseenter="calculateOffset(7)" onMouseLeave="onMouseLeave()">
-              <div class="navigation-circle-list-item__meta">
-                <h3 class="navigation-circle-list-item__title">Home
-                </h3>
-              </div></a></li>
-        </ul>
+<body class="body">
+  <header>
+    <nav id="navbar">
+      <div class="nav-wrapper">
+        <!-- Logo -->
+        <div class="logo-wrapper">
+          <a href="#home"><img width="50%" height="auto" src="MovieDex.png"></a>
+        </div>
+        <!-- Search Function -->
+        <div class="search-wrapper">
+          <form class="search" action="">
+            <input type="search" placeholder="Search here..." required>
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+      </div>  
+        <!-- Desktop Menu  -->
+        <div class="menu-wrapper">
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    
+    <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
     </div>
-  </div>
-</div>
+    
+    <!-- Mobile Menu -->
+    <div class="overlay-menu">
+      <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  </header>
 
-<div id="Desc">
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-6">
-      <h1></h1>
-    </div>
-    <div class="col-sm-5"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-5">
-      <h1>...based in Athens,Greece.<br>
-          I have studied Web Design and Game Development <br>
-          and currently working as an intern at ote hellenic telecom
-          on AR and VR Projects, 3d printing technologies and Web design. </h1>
-    </div>
-    <div class="col-sm-5"></div>
-  </div>
-</div>
-
+  <!-- Rest of the page content -->
 
 </body>
-<div class="container-flex">
-<div class="wrapperLB">
-  <div class="progressbar-wrapper">
-    <div class="progressbar">
-      <div class="side front">
-        <div class="bar"></div>
-      </div>
-      <div class="side back">
-        <div class="bar"></div>
-      </div>
-      <div class="side top">
-        <div class="bar"></div>
-      </div>
-      <div class="side bottom">
-        <div class="bar"></div>
-      </div>
-      <div class="side left"></div>
-    </div>
-  </div>
-</div>
-</div>
+
+<style>
+body {
+  background: #1c1c21;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#navbar {
+  background-color: transparent;
+  line-height: 60px;
+}
+
+.nav-wrapper {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  white-space: nowrap;
+} 
+
+@media(max-width: 830px) {
+    .nav-wrapper {
+      /* width: 90%; */
+    }
+  } 
+  
+@media(max-width: 1200px) {
+      .nav-wrapper {
+        width: 100%;
+      }
+
+      #navbar ul {
+      display: none;
+    }
+
+} 
+
+.logo-wrapper{
+  margin-left: -30%;
+  height: auto;
+  display: inline-block;
+  width: 30%;
+}
+
+.menu-wrapper{
+    height: auto;
+    width: 40%;
+    margin-top: 4%;
+    display: inline-block;
+    float: right;
+}
+
+#navbar ul {
+  float: right;
+  margin-top: 3%;
+  margin-right: -15%;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  color: #ffffff;
+  font-size: 2em;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navbar li a:hover {
+  color: #8338ec;
+}
+
+.search-wrapper {
+    width: 30%;
+    margin-bottom: 5%;
+    display: inline-block;
+}
+
+.search {
+  width: auto;
+  height: 40px;
+  margin: auto;
+  background: #444;
+  background: transparent;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+.search input {
+  width: 70%;
+  padding: 10px 5px;
+  float: left;
+  color: #fff;
+  border: 0;
+  background: transparent;
+  border-radius: 20px;
+  border-radius: 3px 0 0 3px;
+}
+.search input:focus {
+  outline: 0;
+  background: transparent;
+}
+.search input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+  width: 20px;
+  margin-left: .4em;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+  cursor: pointer;
+  }
+.search button {
+    position: relative;
+    float: right;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 30%;
+    color: #fff;
+    background: transparent;
+    border-radius: 20px;
+    right: -3px;
+}
+.search button:hover {
+  background: #8338ec;
+  color: #fff;
+}
+.search button:active {
+  box-shadow: 0px 0px 12px 0px #8338ec;
+}
+
+
+/*======================================================
+                    Mobile Menu Menu Icon
+  ======================================================*/
+@media(max-width: 640px) {
+  .menuIcon {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    height: 23px;
+    width: 27px;
+    z-index: 12;
+  }
+
+  /* Icon Bars */
+  .icon-bars {
+    background: rgb(13, 26, 38);
+    position: absolute;
+    left: 1px;
+    top: 45%;
+    height: 2px;
+    width: 20px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  } 
+
+  .icon-bars::before {
+    background: rgb(13, 26, 38);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -8px;
+    height: 2px;
+    width: 20px;
+/*     -webkit-transition: top 0.2s ease 0.3s;
+    transition: top 0.2s ease 0.3s; */
+    -webkit-transition: 0.3s width 0.4s;
+    transition: 0.3s width 0.4s;
+  }
+
+  .icon-bars::after {
+    margin-top: 0px;
+    background: rgb(13, 26, 38);
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 20px;
+/*     -webkit-transition: top 0.2s ease 0.3s;
+    transition: top 0.2s ease 0.3s; */
+    -webkit-transition: 0.3s width 0.4s;
+    transition: 0.3s width 0.4s;
+  }
+
+  /* Bars Shadows */
+  .icon-bars.overlay {
+    background: rgb(97, 114, 129);
+    background: rgb(183, 199, 211);
+    width: 20px;
+    animation: middleBar 3s infinite 0.5s;
+    -webkit-animation: middleBar 3s infinite 0.5s;
+  } @keyframes middleBar {
+      0% {width: 0px}
+      50% {width: 20px}
+      100% {width: 0px}
+    } @-webkit-keyframes middleBar {
+        0% {width: 0px}
+        50% {width: 20px}
+        100% {width: 0px}
+      }
+
+  .icon-bars.overlay::before {
+    background: rgb(97, 114, 129);
+    background: rgb(183, 199, 211);
+    width: 10px;
+    animation: topBar 3s infinite 0.2s;
+    -webkit-animation: topBar 3s infinite 0s;
+  } @keyframes topBar {
+      0% {width: 0px}
+      50% {width: 10px}
+      100% {width: 0px}
+    } @-webkit-keyframes topBar {
+        0% {width: 0px}
+        50% {width: 10px}
+        100% {width: 0px}
+      }
+
+  .icon-bars.overlay::after {
+    background: rgb(97, 114, 129);
+    background: rgb(183, 199, 211);
+    width: 15px;
+    animation: bottomBar 3s infinite 1s;
+    -webkit-animation: bottomBar 3s infinite 1s;
+  } @keyframes bottomBar {
+      0% {width: 0px}
+      50% {width: 15px}
+      100% {width: 0px}
+    } @-webkit-keyframes bottomBar {
+        0% {width: 0px}
+        50% {width: 15px}
+        100% {width: 0px}
+      }
+
+
+  /* Toggle Menu Icon */
+  .menuIcon.toggle .icon-bars {
+    top: 5px;
+    transform: translate3d(0, 5px, 0) rotate(135deg);
+    transition-delay: 0.1s;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .menuIcon.toggle .icon-bars::before {
+    top: 0;
+    transition-delay: 0.1s;
+    opacity: 0;
+  }
+
+  .menuIcon.toggle .icon-bars::after {
+    top: 10px;
+    transform: translate3d(0, -10px, 0) rotate(-270deg);
+    transition-delay: 0.1s;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .menuIcon.toggle .icon-bars.overlay {
+    width: 20px;
+    opacity: 0;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+  }
+}
+
+
+/*======================================================
+                   Responsive Mobile Menu 
+  ======================================================*/
+.overlay-menu {
+  background: lightblue;
+  color: rgb(13, 26, 38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 15px;
+  transform: translateX(-100%);
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+
+.overlay-menu ul, .overlay-menu li {
+  display: block;
+  position: relative;
+}
+
+.overlay-menu li a {
+  display: block;
+  font-size: 1.8em;
+  letter-spacing: 4px;
+/*   opacity: 0; */
+  padding: 10px 0;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+/*   -webkit-transition: 0.2s opacity 0.2s ease-out;
+  transition: 0.2s opacity 0.2s ease-out; */
+}
+
+.overlay-menu li a:hover,
+.overlay-menu li a:active {
+  color: rgb(28, 121, 184);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+</style>
+
+<script>
+
+/*============================================================================
+                                    Évelym S.
+                    https://www.linkedin.com/in/evelym-santos/
+  ============================================================================*/
+
+    // Navigation
+        // Responsive Toggle Navigation =============================================
+        let menuIcon = document.querySelector('.menuIcon');
+        let nav = document.querySelector('.overlay-menu');
+
+        menuIcon.addEventListener('click', () => {
+            if (nav.style.transform != 'translateX(0%)') {
+                nav.style.transform = 'translateX(0%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            } else { 
+                nav.style.transform = 'translateX(-100%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            }
+        });
+
+
+        // Toggle Menu Icon ========================================
+        let toggleIcon = document.querySelector('.menuIcon');
+
+        toggleIcon.addEventListener('click', () => {
+            if (toggleIcon.className != 'menuIcon toggle') {
+                toggleIcon.className += ' toggle';
+            } else {
+                toggleIcon.className = 'menuIcon';
+            }
+        });
+
+</script>
 
 </html>
