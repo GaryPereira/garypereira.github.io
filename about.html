@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieDex - Movies Reviews </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+      :root {
+        --d: 700ms;
+        --e: cubic-bezier(0.19, 1, 0.22, 1);
+        --font-sans: "Rubik", sans-serif;
+        --font-serif: "Cardo", serif;
+      }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body class="body">
+  <header>
+    <!-- #NAVIGATION BAR Desctop and Mobile -->
+    <nav id="navbar">
+      <div class="nav-wrapper">
+        <!-- Logo -->
+        <div class="logo-wrapper">
+          <a href="#home"><img width="50%" height="auto" src="/Images/MovieDex.png"></a>
+        </div>
+        <!-- Search Function -->
+        <div class="search-wrapper">
+          <form class="search" action="">
+            <input type="search" placeholder="Search here..." required>
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>  
+        <!-- Desktop Menu  -->
+        <div class="menu-wrapper">
+          <ul id="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#services">Movies</a></li>
+            <li><a href="#about">Shows</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/Login.html">Log In</a></li>
+          </ul>
+        </div>
+          <!-- Mobile Menu  -->
+        <div class="mobile-wrapper">
+          <input id="mobile-toggle" type="checkbox">
+          <label class='mobile-button-container' for="mobile-toggle">
+            <div class='mobile-button'></div>
+          </label>
+          <ul class="mobile">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#services">Movies</a></li>
+            <li><a href="#about">Shows</a></li>
+            <li><a href="#contact">About</a></li>
+            <li><a href="/Login.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="aboutText">
+    <h1 style="font-size:40px"><u>About Us</u></h1>
+
+    <p>Welcome to Your Movie Database, your go-to destination for the latest movies and comprehensive film information.</p>
+
+    <p>
+    Whether you're searching for details on upcoming releases, browsing through popular genres, or seeking in-depth information on your favorite actors and directors, we've got you covered. 
+    Our user-friendly interface allows you to effortlessly explore and discover new films, making your movie-watching experience more enjoyable.</p>
+
+    With an extensive database of movie reviews, ratings, trailers, and synopses, Your Movie Database is your one-stop hub for all things film-related. 
+    We aim to provide you with accurate and reliable information to help you make informed decisions about which movies to watch.</p>
+
+    <p>Join our vibrant community of movie enthusiasts and embark on a cinematic journey like no other. We're here to celebrate the magic of movies with <span style="color: #8338ec;">you</span>, every step of the way.</p>
+  </div> 
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="groupA">
+          <div class="footer-col">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#services">Movies</a></li>
+                <li><a href="#about">Shows</a></li>
+                <li><a href="#contact">About</a></li>
+                <li><a href="/Login.html">Log In</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+          </div>
+        </div>
+        <div class="groupB">
+          <div class="footer-col">
+            <a href="#home"><img width="100%" height="auto" src="/Images/MovieDex.png"></a>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+</body>
+
+<style>
+
+.aboutText{
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 40px;
+
+}
+
+.aboutText h1{
+   text-align: center;
+}
+
+.fluid-box{
+    width: 30%;
+    float: left;
+    font-size: 20px;
+
+}
+
+.fluid-container {
+    padding: 10px;
+
+}
+
+ body {
+    background: #101012;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  #navbar {
+    background-color: transparent;
+    line-height: 60px;
+  }
+
+  .nav-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    white-space: nowrap;
+  } 
+
+  @media(max-width: 550px) {
+      .mobile {
+      margin-top: 56px!important;
+      }
+    } 
+    
+  @media(max-width: 1200px) {
+        .nav-wrapper {
+          width: 100%;
+        }
+
+        .menu-wrapper{
+          display: none !important;
+        }
+
+        .search button{
+          display: none !important;
+        }
+
+  } 
+
+  .logo-wrapper{
+    margin-left: -30%;
+    height: auto;
+    display: inline-block;
+    width: 30%;
+  }
+
+  .menu-wrapper{
+      height: auto;
+      width: 40%;
+      margin-top: 5%;
+      display: inline-block;
+      float: right;
+  }
+
+  .menu-wrapper ul {
+    float: right;
+    margin-top: 3%;
+    margin-right: -15%;
+    display: flex!important;
+  }
+
+  #navbar li {
+    display: inline-block;
+  }
+
+  #navbar li a {
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #navbar li a:hover {
+    color: #8338ec;
+  }
+
+  .search-wrapper {
+      width: 30%;
+      margin-bottom: 5%;
+      display: inline-block;
+  }
+
+  .search {
+    width: auto;
+    height: 40px;
+    margin: auto;
+    background: #444;
+    background: transparent;
+    border-radius: 20px;
+    border: 3px solid #fff;
+  }
+
+  .search input {
+    width: 80%;
+    padding: 10px 5px;
+    float: left;
+    color: #fff;
+    border: 0;
+    background: transparent;
+    border-radius: 20px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .search input:focus {
+    outline: 0;
+    background: transparent;
+  }
+
+  .search input::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      height: 20px;
+    width: 20px;
+    margin-left: .4em;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+    cursor: pointer;
+  }
+
+  .search button {
+      position: relative;
+      float: right;
+      border: 0;
+      cursor: pointer;
+      height: 40px;
+      width: 20%;
+      color: #fff;
+      background: transparent;
+      border-radius: 20px;
+  }
+
+  .search button:hover {
+    background: #8338ec;
+    color: #fff;
+  }
+
+  .search button:active {
+    box-shadow: 0px 0px 12px 0px #8338ec;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .mobile-wrapper {
+
+      background-color: transparent;
+      color: #fff;
+      height: auto;
+      width: 10%;
+      margin-top: 5%;
+      float: right;
+
+  }
+
+  .mobile {
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .mobile > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .mobile-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mobile-toggle {
+    display: none;
+  }
+
+  .mobile-button,
+  .mobile-button::before,
+  .mobile-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+  }
+
+  .mobile-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+
+  .mobile-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+
+  @media (max-width: 1200px) {
+    .mobile-button-container {
+      display: flex;
+    }
+    .mobile-wrapper ul{
+      display: flex!important;
+    }
+    .mobile {
+      position: absolute;
+      margin-top: 100px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #mobile-toggle ~ .mobile li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #mobile-toggle:checked ~ .mobile li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .mobile > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .mobile > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    .mobile-wrapper ul{
+      display: none!important;
+    }
+  }
+
+  /* Title Class */
+  .title{
+    /* text-align: center; */
+    width: 80%;
+    margin: auto;
+    /* align-items: center; */
+  }
+
+  
+.container{
+  margin:auto;
+  max-width: 80%;
+ 
+}
+
+.row{
+	display: flex;
+  justify-content: center;  
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+    background-color: #24262b;
+  padding: 70px 0;
+  margin-top: 50px;
+
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 30px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #8338ec;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 25px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+}
+
+.footer-col ul li a:hover{
+	color: #8338ec;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #8338ec;
+}
+
+.footer ul{
+  padding: 0px;
+
+}
+
+.container row{
+  flex-wrap:nowrap;
+}
+
+.groupA{
+  width: 100%;
+    display: flex;
+}
+
+.groupB{
+  width: 100%;
+    display: contents;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+@media(max-width: 550px) {
+      .mobile {
+      margin-top: 56px!important;
+      }
+    }
+        
+@media(max-width: 1200px) {
+    .nav-wrapper {
+      width: 100%;
+    }
+
+    .menu-wrapper{
+      display: none !important;
+    }
+
+    .search button{
+      display: none !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mobile-button-container {
+      display: flex;
+    }
+    .mobile-wrapper ul{
+      display: flex!important;
+    }
+    .mobile {
+      position: absolute;
+      margin-top: 100px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #mobile-toggle ~ .mobile li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #mobile-toggle:checked ~ .mobile li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .mobile > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .mobile > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .mobile-wrapper ul{
+      display: none!important;
+    }
+}
+
+@media (min-width: 600px) {
+    .cardContent {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+@media (min-width: 800px) {
+    .cardContent {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .card {
+      height: 350px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .poster {
+      width: 30%!important;
+    }
+}
+
+@media (max-width: 1610px) {
+    .poster {
+      width: 35%!important;
+    }
+}
+
+@media (max-width: 1608px) {
+    .fix {
+        height: 882px!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .fix {
+        height: 1000px!important;
+    }
+}
+
+@media (max-width: 426px) {
+    .fix {
+        height: 1500px!important;
+    }
+}
+
+@media (max-width: 376px) {
+    .fix {
+        height: 1700px!important;
+    }
+}
+
+@media (max-width: 321px) {
+    .fix {
+        height: 2000px!important;
+    }
+}
+
+.fix{
+    padding-left: 5%;
+    height: 500px;
+}
+
+
+.postercontainer {
+  width: 450px;
+  height: 300px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: inherit;
+  height: inherit;
+  color: white;
+}
+.movie-card > .card-image {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  border-radius: 20px;
+  background: black;
+}
+.movie-card > .card-image > img {
+  pointer-events: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.movie-card > .test {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 0, 0, 0) 45%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  box-sizing: border-box;
+  height: inherit;
+  position: absolute;
+  padding: 30px;
+  z-index: 1;
+}
+.movie-card > .test > .card-header {
+  display: flex;
+}
+.movie-card > .test > .card-header > .title {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  line-height: 2rem;
+}
+.movie-card > .test > .card-header > .title > .movie {
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+.movie-card > .test > .card-header > .title > .type {
+  text-transform: uppercase;
+}
+.movie-card > .test > .card-header > .quality {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+.movie-card > .test > .card-view {
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+}
+.movie-card > .test > .card-view > .genre-year {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.movie-card > .test > .card-view > .genre-year > .genre {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.movie-card > .test > .card-view > .card-play > .play {
+  font-size: 1.35rem;
+}
+
+.poster{
+    width: 25%;
+    float: left;
+    padding-right: 25px;
+}
+
+.movie-description{
+    color: #fff;
+    width: 65%;
+    float: left;
+}
+
+.text-overview{
+    padding: 10px;
+    font-size: 30px;
+}
+
+</style>
+</html>
