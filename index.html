@@ -14,6 +14,7 @@
       }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body class="body">
   <header>
@@ -34,11 +35,11 @@
         <!-- Desktop Menu  -->
         <div class="menu-wrapper">
           <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Movies</a></li>
-            <li><a href="#about">Shows</a></li>
-            <li><a href="#contact">About</a></li>
-            <li><a href="#contact">Log In</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/movies.html">Movies</a></li>
+            <li><a href="/movies.html">Shows</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/Login.html">Log In</a></li>
           </ul>
         </div>
           <!-- Mobile Menu  -->
@@ -48,10 +49,11 @@
             <div class='mobile-button'></div>
           </label>
           <ul class="mobile">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/movies.html">Movies</a></li>
+            <li><a href="/movies.html">Shows</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/Login.html">Log In</a></li>
           </ul>
         </div>
       </div>
@@ -68,31 +70,28 @@
       <div class="content">
         <h2 class="title">Fast X</h2>
         <p class="copy">Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.</p>
-        <button class="btn">View More</button>
+        <a href="/moviepage.html"><button class="btn">View More</button></a>
       </div>
     </div>
     <div class="card">
       <div class="content">
         <h2 class="title">Guardians of the Galaxy Vol. 3</h2>
-        <p class="copy">Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - 
-          a mission that could mean the end of the Guardians if not successful.</p>
-        <button class="btn">View More</button>
+        <p class="copy">Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe ....</p>
+        <a href="/moviepage.html"><button class="btn">View More</button></a>
       </div>
     </div>
     <div class="card">
       <div class="content">
         <h2 class="title">The Super Mario Bros. Movie</h2>
-        <p class="copy">While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world.
-          But when the brothers are separated, Mario embarks on an epic quest to find Luigi.</p>
-        <button class="btn">View More</button>
+        <p class="copy">While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi...</p>
+        <a href="/moviepage.html"><button class="btn">View More</button></a>
       </div>
     </div>
     <div class="card">
       <div class="content">
         <h2 class="title">Evil Dead Rise</h2>
-        <p class="copy">Three siblings find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts
-          them into a primal battle for survival as they face the most nightmarish version of family imaginable.</p>
-        <button class="btn">View More</button>
+        <p class="copy">Three siblings find an ancient vinyl that gives birth to bloodthirsty demons...</p>
+        <a href="/moviepage.html"><button class="btn">View More</button></a>
       </div>
     </div>
   </div>
@@ -109,9 +108,7 @@
             <div class="trailer-card" onmouseover="changeBackground_First()" onclick= "openFirstTrailer()">
               <div class="trailer-content">
                 <h2 class="title">Futurama</h2>
-                <p class="copy">Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - 
-                  a mission that could mean the end of the Guardians if not successful.</p>
-                <button class="btn">View More</button>
+                <p class="copy"></p>
               </div>
             </div>
           
@@ -120,9 +117,7 @@
               <div class="trailer-card" onmouseover="changeBackground_Second()" onclick= "openSecondTrailer()" >
                   <div class="trailer-content">
                     <h2 class="title">Fast X</h2>
-                    <p class="copy">Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - 
-                      a mission that could mean the end of the Guardians if not successful.</p>
-                    <button class="btn">View More</button>
+                    <p class="copy"></p>
                   </div>
               </div>
           
@@ -131,9 +126,7 @@
           <div class="trailer-card" onmouseover="changeBackground_Third()" onclick= "openThirdTrailer()">
             <div class="trailer-content">
               <h2 class="title">Guardians of the Galaxy Vol. 3</h2>
-              <p class="copy">While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world.
-                But when the brothers are separated, Mario embarks on an epic quest to find Luigi.</p>
-              <button class="btn">View More</button>
+              <p class="copy"></p>
             </div>
           </div>
           
@@ -142,16 +135,88 @@
           <div class="trailer-card" onmouseover="changeBackground_Fourth()" onclick= "openFourthTrailer()">
             <div class="trailer-content">
               <h2 class="title">The Pope's Exorcist</h2>
-              <p class="copy">Three siblings find an ancient vinyl that gives birth to bloodthirsty demons that run amok in a Los Angeles apartment building and thrusts
-                them into a primal battle for survival as they face the most nightmarish version of family imaginable.</p>
-              <button class="btn">View More</button>
+              <p class="copy"></p>
             </div>
           </div>
 
         </div>
     </div>
   </div>
-  <h1>Test</h1>
+  <!-- Whats Popular Section -->
+  <div style="padding-top: 50px">
+    <div class="title">
+      <h2 style="color: #8338ec; ">
+        What's Popular
+      </h2>
+    </div>
+    <div class="cardContent">
+      <div class="cardB">
+        <div class="content">
+          <h2 class="title">Citadel</h2>
+          <p class="copy">What if you lost your memory? What if a spy didn’t know they were a spy? Years ago, the top agents of Citadel...</p>
+          <a href="/moviepage.html"><button class="btn">View More</button></a>
+        </div>
+      </div>
+      <div class="cardB">
+        <div class="content">
+          <h2 class="title">Guy Ritchie's The Covenant</h2>
+          <p class="copy">During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.</p>
+          <a href="/moviepage.html"><button class="btn">View More</button></a>
+        </div>
+      </div>
+      <div class="cardB">
+        <div class="content">
+          <h2 class="title">Renfield</h2>
+          <p class="copy">Having grown sick and tired of his centuries as Dracula's lackey, Renfield finds a new lease on life...</p>
+          <a href="/moviepage.html"><button class="btn">View More</button></a>
+        </div>
+      </div>
+      <div class="cardB">
+        <div class="content">
+          <h2 class="title">Creed III </h2>
+          <p class="copy">After dominating the boxing world, Adonis Creed has been thriving in both his career and family life...</p>
+          <a href="/moviepage.html"><button class="btn">View More</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="quotemain">The best place for your movie needs.</div>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="groupA">
+          <div class="footer-col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+            <li><a href="/movies.html">Movies</a></li>
+            <li><a href="/movies.html">Shows</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/Login.html">Log In</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+          </div>
+        </div>
+        <div class="groupB">
+          <div class="footer-col">
+            <a href="#home"><img width="100%" height="auto" src="/Images/MovieDex.png"></a>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
 </body>
 
 <style>
@@ -803,6 +868,241 @@
   .trailer-card:hover:after + #background-trailer-image{
     background-image: url(/Images/Posters/GOTG3_Poster.jpg);
   }
+
+.container{
+  max-width: 1170px;
+  margin:auto; 
+  max-width: 80%;
+
+}
+
+.row{
+	display: flex;
+  justify-content: center;  
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 30px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #8338ec;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 25px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+}
+
+.footer-col ul li a:hover{
+	color: #8338ec;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #8338ec;
+}
+
+.footer ul{
+  padding: 0px;
+
+}
+
+.container row{
+  flex-wrap:nowrap;
+}
+
+.groupA{
+  width: 100%;
+    display: flex;
+}
+
+.groupB{
+  width: 100%;
+    display: contents;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+  .cardB:nth-child(1):before {
+    background-image: url(/Images/Posters/Citadel_Poster.jpg);
+  }
+
+  .cardB:nth-child(2):before {
+    background-image: url(/Images/Posters/TheCovenant_Poster.jpg);
+  }
+
+  .cardB:nth-child(3):before {
+    background-image: url(/Images/Posters/Renfield_Poster.jpg);
+  }
+
+  .cardB:nth-child(4):before {
+    background-image: url(/Images/Posters/CreedIII_Poster.jpg);
+  }
+  
+
+  .cardB {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 600px) {
+    .cardB {
+      height: 350px;
+    }
+  }
+
+  .cardB:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+
+  .cardB:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+
+  @media (hover: hover) and (min-width: 600px) {
+    .card:after {
+      transform: translateY(0);
+    }
+
+    .content {
+      transform: translateY(calc(100% - 4.5rem));
+    }
+    .content > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+
+    .cardB:hover,
+  .cardB:focus-within {
+      align-items: center;
+    }
+    .cardB:hover:before,
+  .cardB:focus-within:before {
+      transform: translateY(-4%);
+    }
+    .cardB:hover:after,
+  .cardB:focus-within:after {
+      transform: translateY(-50%);
+    }
+    .cardB:hover .content,
+  .cardB:focus-within .content {
+      transform: translateY(0);
+    }
+    .cardB:hover .content > *:not(.title),
+  .cardB:focus-within .content > *:not(.title) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: calc(var(--d) / 8);
+    }
+
+    .cardB:focus-within:before, .cardB:focus-within:after,
+  .cardB:focus-within .content,
+  .cardB:focus-within .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+  }
+
+  .quotemain{
+    padding-top: 50px;
+    font-size: 13em;
+    text-align: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+
+
 </style>
 
 <script>
